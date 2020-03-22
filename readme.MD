@@ -4,79 +4,74 @@ In this lab you will create small Java applications by using as reference an UML
 - toString() method when required will return a string like *ClassName{attributeName1=attributeValue1,...,attributeNamen=attributeValuen}*.
 - Do not reuse (import) the same class in multiple exercises. **Each exercise is standalone and should be resolved in its package.**
 
-## Exercise 0
-
-This exercise demonstrate concepts you will need to apply in this lab. Solution for this diagram can be found in source folder in package *isp.lab4.exercise0*.
-![Exercise 1 image](docs/ex0.jpg)
-
-**NOTE: This exercise do not require any implementation from student.**
-
 ## Exercise 1
 ![Exercise 1 image](docs/ex1.jpg)
 
 Given the UML class diagram above, implement the corresponding Java program.
 
 1. Create Java class based on the diagram above. 
-2. Instantiate and test created class in the provided Exercise 1 main method.
-3. Create a minimal unit test for testing the behavior of the created class.
+2. Demonstrate the functionality of application in Exercise1 class main method.
+3. Create minimal unit tests for testing the behavior of the programm.
+
+**Note 1: Constructors and setter\getter methods are not represented in the diagram bu can\should be implemented."**
+
+**Note 2: You can add any suplimentary methods if required.**
 
 
 ## Exercise 2
-![Exercise 2 image](docs/ex2.jpg)
 
-Given the UML class diagram above, implement the corresponding Java program.
+Create an UML Use-Case diagram describing an ATM system. Save jpg use case diagram in /docs subfolder and display it in this readme file bellow.
 
-1. Create Java class based on the diagram above. 
-2. Instantiate and test created class in the provided Exercise 2 main method.
-3. Create a minimal unit test for testing the behavior of the created class.
+**>>>>insert use case diagram here<<<<**
 
-## Exercise 3 
-![Exercise 3 image](docs/ex3.jpg)
+## Exercise 3
 
-Given the UML class diagram above, implement the corresponding Java program.
+```java
+interface Playable {
+    void play();
+}
 
-1. Create Java classes based on the diagram above. 
-    * controlStep() method check temperature and if temperature is > 50 will set fireAlarm sensor *true*.
-    * controlStep() method print a message "Fire alarm started" or "Fire alarm not started" based on verification results.
-2. Instantiate and test created classes in the provided Exercise 3 main method.
-3. Create a minimal unit test for testing the behavior of the created class.
+class ColorVideo implements Playable {
 
+    private String fileName;
 
-## Exercise 4
-![Exercise 4 image](docs/ex4.jpg)
+    public ColorVideo(String fileName){
+        this.fileName = fileName;
+        loadFromDisk(fileName);
+    }
 
-Given the UML class diagram above, implement the corresponding Java program.
+    @Override
+    public void play() {
+        System.out.println("Play " + fileName);
+    }
 
-1. Create Java classes based on the diagram above. 
-    * controlStep() method check temperature and if temperature is > 50 for **all sensors** will set fireAlarm sensor *true*.
-    * controlStep() method print a message "Fire alarm started" or "Fire alarm not started" based on verification results.
-2. Instantiate and test created classes in the provided Exercise 4 main method.
-3. Create a minimal unit test for testing the behavior of the created class.
+    private void loadFromDisk(String fileName){
+        System.out.println("Loading video..." + fileName);
+    }
+}
 
-## Exercise 5 
-![Exercise 5 image](docs/ex5.jpg)
+class ProxyVideo implements Playable {
 
-Given the UML class diagram above, implement the corresponding Java program.
+    private ColorVideo video;
+    private String fileName;
 
-1. Create Java classes based on the diagram above. 
-    * controlStep() method check temperature and if temperature is > 50 for **at least one sensor** will set fireAlarm sensor *true*.
-    * controlStep() method print a message "Fire alarm started" or "Fire alarm not started" based on verification results.
-2. Instantiate and test created classes in the provided Exercise 5 main method.
-    * call controlStep() method in main by accessing the controller trough *House* object.
-3. Create a minimal unit test for testing the behavior of the created class.
+    public ProxyVideo(String fileName){
+        this.fileName = fileName;
+    }
 
-## Exercise 6 
-![Exercise 5 image](docs/ex6.jpg)
+    @Override
+    public void play() {
+        if(video == null){
+            video = new ColorVideo(fileName);
+        }
+        video.play();
+    }
+}
+```
 
-Given the UML class diagram above, implement the corresponding Java program.
+For the application above:
+* create UML class diagram and display it bellow.
+* add a new class _BlakAndWhiteVideo_ which will displaye message "Play black and white video {name of the video}".
+* add necessary changes in ProxyVide class so that depending on a constructor argument given in this class the proxy to call either black and white or color playable video.
 
-Note: Constructors are not represented in the diagram above, but you will need to add all necessary constructors to be able to initialise all attributes. 
-
-1. Create Java classes based on the diagram above. 
-    * method getPaymentAmount() will return 0.0 in base class Employee.
-2. Instantiate and test created classes in the provided Exercise 6 main method. 
-    1. create 1 object of each derived type and display payment amount.
-    2. create a vector of 6 objects of type Employee, add 2 object of each type and calculate total payment.
-3. Create a minimal unit test for testing the behavior of the created class.
-
-
+**>>>>insert class diagram here<<<<**

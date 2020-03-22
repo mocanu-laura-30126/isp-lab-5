@@ -1,4 +1,4 @@
-package isp.lab4.exercise0;
+package isp.lab5.exercise0;
 
 /**
  * Clasa derivata din Engine. Utilizeaza mecanismul de mostenire pentru a adaugat proprietati noi si/sau a modifica comportamentul

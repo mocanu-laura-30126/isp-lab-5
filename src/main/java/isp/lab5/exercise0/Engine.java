@@ -1,4 +1,4 @@
-package isp.lab4.exercise0;
+package isp.lab5.exercise0;
 
 
 /**

@@ -1,4 +1,4 @@
-package isp.lab4.exercise0;
+package isp.lab5.exercise0;
 
 public class Exercise0 {
     public static void main(String[] args) {
