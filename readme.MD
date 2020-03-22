@@ -10,6 +10,8 @@ In this lab you will create small Java applications by using as reference an UML
 Given the UML class diagram above, implement the corresponding Java program.
 
 1. Create Java class based on the diagram above. 
+    * _insertCard()_ method from ATM will compare received pin with the pin stored in card. If 2 pins match the card will be stored as attribute and will be used for executign transactions.
+    * _removeCard()_ method will _invalidate_ a previously inserted card by making the attribute null. 
 2. Demonstrate the functionality of application in Exercise1 class main method.
 3. Create minimal unit tests for testing the behavior of the programm.
 
