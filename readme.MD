@@ -13,7 +13,7 @@ Given the UML class diagram above, implement the corresponding Java program.
 2. Demonstrate the functionality of application in Exercise1 class main method.
 3. Create minimal unit tests for testing the behavior of the programm.
 
-**Note 1: Constructors and setter\getter methods are not represented in the diagram bu can\should be implemented."**
+**Note 1: Constructors and setter\getter methods are not represented in the diagram but can\should be implemented."**
 
 **Note 2: You can add any suplimentary methods if required.**
 
@@ -71,7 +71,7 @@ class ProxyVideo implements Playable {
 
 For the application above:
 * create UML class diagram and display it bellow.
-* add a new class _BlakAndWhiteVideo_ which will displaye message "Play black and white video {name of the video}".
-* add necessary changes in ProxyVide class so that depending on a constructor argument given in this class the proxy to call either black and white or color playable video.
+* add a new class _BlakAndWhiteVideo_ which will display message "Play black and white video {name of the video}".
+* add necessary changes in ProxyVideo class so that depending on a constructor argument given in this class the proxy to call either black and white or color playable video.
 
 **>>>>insert class diagram here<<<<**
