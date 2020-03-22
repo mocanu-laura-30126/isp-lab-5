@@ -2286,7 +2286,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-balande: double",
+											"text": "-balance: double",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -6109,7 +6109,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFxAk69NPNKVCg="
 							},
-							"name": "balande",
+							"name": "balance",
 							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
@@ -6393,6 +6393,7 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
