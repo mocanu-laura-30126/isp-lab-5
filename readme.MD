@@ -173,7 +173,7 @@ public class Main {
 
 For the application above:
 * create UML class diagram and display it bellow.
-* add new two classes(_Rectangle_ and _RoundedRectangle_) which will have their own implementation of draw method.
+* add new two classes(_Square_ and _RoundedSquare_) which will have their own implementation of draw method.
 * adapt the current implementation in order to be able to create instances of these classes based on their type. Test the new functionality using Main class.
 
 **>>>>insert class diagram here<<<<**
