@@ -10,14 +10,14 @@ In this lab you will create small Java applications by using as reference an UML
 Given the UML class diagram above, implement the corresponding Java program.
 
 1. Create Java class based on the diagram above. 
-    * _insertCard()_ method from ATM will compare received pin with the pin stored in card. If 2 pins match the card will be stored as attribute and will be used for executign transactions.
+    * _insertCard()_ method from ATM will compare received pin with the pin stored in card. If 2 pins match the card will be stored as attribute and will be used for executing transactions.
     * _removeCard()_ method will _invalidate_ a previously inserted card by making the attribute null. 
 2. Demonstrate the functionality of application in Exercise1 class main method.
 3. Create minimal unit tests for testing the behavior of the programm.
 
 **Note 1: Constructors and setter\getter methods are not represented in the diagram but can\should be implemented."**
 
-**Note 2: You can add any suplimentary methods if required.**
+**Note 2: You can add any extra methods if required.**
 
 
 ## Exercise 2
@@ -73,7 +73,7 @@ class ProxyVideo implements Playable {
 
 For the application above:
 * create UML class diagram and display it bellow.
-* add a new class _BlakAndWhiteVideo_ which will display message "Play black and white video {name of the video}".
+* add a new class _BlackAndWhiteVideo_ which will display message "Play black and white video {name of the video}".
 * add necessary changes in ProxyVideo class so that depending on a constructor argument given in this class the proxy to call either black and white or color playable video.
 
 **>>>>insert class diagram here<<<<**
